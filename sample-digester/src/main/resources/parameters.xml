@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceGateway hostId="WIN-83A1-88DE-755F-239A" vendor="HUNDSUN" user="WM" expiration="29999999" generated="20160413" version="4.0">
+	<Distributor distributorId="234" distributorName="FundCompany-A">
+		<Parameter parameterName="dn1" parameterDescribe="dd1">
+			<Set key="dsk1" value="123"/>
+			<Set key="dsk2" value="sas"/>
+		</Parameter>
+		<Parameter parameterName="dn2" parameterValue="0" parameterDescribe="dd2"/>
+
+		<Merchant merchantId="00001" merchantName="TP-A">
+			<Parameter parameterName="mn1" parameterDescribe="md1">
+				<Set key="msk1" value="nnl"/>
+				<Set key="msk2" value="9jn"/>
+			</Parameter>
+			<Parameter parameterName="mn2" parameterValue="as" parameterDescribe="md2"/>
+		</Merchant>
+
+		<Merchant merchantId="00002" merchantName="TP-B">
+			<Parameter parameterName="mn3" parameterValue="666" parameterDescribe="md3"/>
+			<Parameter parameterName="mn4" parameterValue="sss" parameterDescribe="md4"/>
+		</Merchant>
+	</Distributor>
+</ServiceGateway>
