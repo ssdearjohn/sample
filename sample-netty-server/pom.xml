@@ -10,19 +10,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>sample</groupId>
-    <artifactId>sample-digester</artifactId>
+    <artifactId>sample-netty-server</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>SAMPLE : DIGESTER</name>
+
 
     <dependencies>
         <dependency>
-            <groupId>commons-digester</groupId>
-            <artifactId>commons-digester</artifactId>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
         </dependency>
     </dependencies>
 </project>

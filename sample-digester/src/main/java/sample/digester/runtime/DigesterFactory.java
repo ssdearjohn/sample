@@ -26,15 +26,11 @@ public class DigesterFactory {
             Delegate<T> delegate = (Delegate<T>)clazz.getDeclaredConstructor().newInstance();
             //
             obj = delegate.digeste(is);
-        } catch (ClassNotFoundException e){
-            e.printStackTrace();
-        } catch (NoSuchMethodException e){
-            e.printStackTrace();
-        } catch (InvocationTargetException e){
-            e.printStackTrace();
-        } catch (IllegalAccessException e){
-            e.printStackTrace();
-        } catch (InstantiationException e){
+        } catch (ClassNotFoundException
+                | NoSuchMethodException
+                | InvocationTargetException
+                | IllegalAccessException
+                | InstantiationException e){
             e.printStackTrace();
         }
         Assert.notNull(obj, "result cannot be NULL!");

@@ -23,9 +23,7 @@ public class ServiceGatewayDelegate implements Delegate<ServiceGateway> {
             createNodeServiceGateway(digester);
             //
             serviceGateway = (ServiceGateway) digester.parse(is);
-        } catch(SAXException e){
-            e.printStackTrace();
-        } catch(IOException e){
+        } catch(SAXException | IOException e){
             e.printStackTrace();
         }
         return serviceGateway;
